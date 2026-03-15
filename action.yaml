@@ -57,4 +57,4 @@ outputs:
     description: The status of the approval ("approved" or "denied")
 runs:
   using: docker
-  image: harbor.management.fib.dc/temp/manual-approval:09603d5
+  image: docker://harbor.management.fib.dc/temp/manual-approval:09603d5
