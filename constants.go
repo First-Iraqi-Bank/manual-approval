@@ -32,7 +32,7 @@ var (
 	additionalApprovedWords = readAdditionalWords(envVarAdditionalApprovedWords)
 	additionalDeniedWords   = readAdditionalWords(envVarAdditionalDeniedWords)
 
-	approvedWords = append([]string{"approved", "approve", "lgtm", "yes"}, additionalApprovedWords...)
+	approvedWords = append([]string{"I take responsibility for approving the execution of this query on the production database"}, additionalApprovedWords...)
 	deniedWords   = append([]string{"denied", "deny", "no"}, additionalDeniedWords...)
 )
 
