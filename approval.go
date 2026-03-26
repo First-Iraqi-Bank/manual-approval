@@ -97,9 +97,8 @@ func (a *approvalEnvironment) createApprovalIssue(ctx context.Context) error {
 		issueBody,
 	)
 	a.approvalIssue, _, err = a.client.Issues.Create(ctx, a.targetRepoOwner, a.targetRepoName, &github.IssueRequest{
-		Title:     &issueTitle,
-		Body:      &issueBody,
-		Assignees: &a.issueApprovers,
+		Title: &issueTitle,
+		Body:  &issueBody,
 	})
 	if err != nil {
 		return err
